@@ -1,7 +1,7 @@
 # beer_and_wine_NLP
 Using wine and beer reviews for natural language processing practice
 
-###Heroku App - Markov Generation of fake wine reviews
+### Heroku App - Markov Generation of fake wine reviews
 https://warm-woodland-21331.herokuapp.com/
 ![Alt text](images/sample_app_review.png?raw=true "Sample app")
 
