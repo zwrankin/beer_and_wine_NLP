@@ -15,12 +15,14 @@ class AI_Sommelier():
         self.words = self.description_words.split(" ")
         self.prefix = make_prefix_dict(self.words)
 
-    def sample_review(self, seed=0):
-        random.seed(seed)
+    def sample_review(self, seed=None):
+        if seed is not None:
+            random.seed(seed)
         return random.choice(self.descriptions)
 
-    def write_review(self, seed=0):
-        random.seed(seed)
+    def write_review(self, seed=None):
+        if seed is not None:
+            random.seed(seed)
         # Note - currently these lengths will be longer than real review, because
         # review lenghts are being assigned to min_length
         min_words = random.choice(self.description_lengths)
