@@ -1,6 +1,11 @@
 from flask import Flask
 from datetime import datetime
+from src.data import load_descriptions
+from src.sommelier import AI_Sommelier
 app = Flask(__name__)
+
+#descriptions = load_descriptions()
+#sommelier = AI_Sommelier(descriptions, subset=10_000)
 
 @app.route('/')
 def homepage():
